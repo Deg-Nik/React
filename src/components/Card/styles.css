@@ -1,0 +1,53 @@
+.card_component {
+display: flex;
+flex: 1;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: rgb(13, 122, 238);
+}
+
+.person_card {
+display: flex;
+flex-direction: column;
+gap: 15px;
+width: 540px;
+height: fit-content;
+border: 2px solid black;
+padding: 40px;
+margin: 30px;
+border-radius: 8px;
+background-color: white;
+box-shadow: 0 4px 12px black;
+}
+
+.card_title {
+display: flex;
+justify-content: center;
+font-size: 44px;
+font-weight: bold;
+color: rgb(0, 128, 21);
+}
+
+.avatar {
+display: block;
+margin: 0 auto;
+width: 250px;
+height: 250px;
+border-radius: 20%;
+}
+
+.person_info {
+font-size: 20px;
+font-weight: bold;
+color: black;
+}
+
+.label {
+  color: red;
+}
+
+.person_card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

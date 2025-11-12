@@ -1,10 +1,12 @@
 import "./styles.css"
+import Card from "../../components/Card/Card.jsx";
 
 function Homework_02 () {
   return (
    <div className="homework_02_wrapper">
-    Homework_02
-    {/* hw */}
+    <Card/>
+    <Card/>
+    <Card/>
   </div>
   )
 }
