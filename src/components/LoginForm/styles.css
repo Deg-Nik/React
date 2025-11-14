@@ -1,0 +1,33 @@
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 590px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: white;
+  padding: 60px;
+}
+
+.input_content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_content::placeholder {
+  color: #b0b0b0;
+  font-size: 18px;
+}
+
+.button_content {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+}

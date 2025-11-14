@@ -1,0 +1,8 @@
+.homework_03_wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(244, 246, 248);
+}
