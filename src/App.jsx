@@ -10,8 +10,8 @@ function App() {
       {/* <Lesson_02 /> */}
       {/* <Homework_02/> */}
       {/* <Lesson_03/> */}
-      <CarShop/>
       {/*<Homework_03/>*/}
+      <CarShop/>
     </>
   );
 }
