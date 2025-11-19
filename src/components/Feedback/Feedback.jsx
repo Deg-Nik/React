@@ -3,50 +3,39 @@ import Button from "../Button/Button";
 import { useState } from "react";
 
 function Feedback() {
-  const [count, setCount] = useState(0);
+  const [count, setLikes] = useState(0);
+  const [count1, setDislikes] = useState(0);
 
-  const onPlus = () => {
-    setCount((countPlus) => {
+  const onLike = () => {
+    setLikes((countPlus) => {
       return countPlus + 1;
     });
   };
-  const onMinus = () => {
-    setCount((countMinus) => {
-      return countMinus - 1;
+  const onDislike = () => {
+    setDislikes((countMinus) => {
+      return countMinus + 1;
     });
   };
   const onResset = () => {
-    setCount((countResset) => {
-      return (countResset = 0);
-    });
+    setLikes(0);
+    setDislikes(0);
   };
 
   return (
-    <div className="feedback_wrapper">
-      <div className="count">
-        <p>{count}</p>
+    <div className="feedback_container">
+      <div className="like_content">
+        <div className="like_dislike">
+          <Button name="Like" onClick={onLike} />
+          <p className="count">{count}</p>
+        </div>
+
+        <div className="like_dislike">
+          <Button name="Dislike" onClick={onDislike} backgroundColor="black" />
+          <p className="count">{count1}</p>
+        </div>
       </div>
-
-      <div className="button_container">
-        <div className="button_control">
-          <Button name="Like" onClick={onPlus} />
-        </div>
-
-        <div className="button_control">
-          <Button 
-            name="Dislike" 
-            onClick={onMinus}
-            backgroundColor="black" 
-          />
-        </div>
-
-        <div className="button_control">
-          <Button
-            name="Reset Results"
-            onClick={onResset}
-            backgroundColor="red"
-          />
-        </div>
+      <div className="resset">
+        <Button name="Reset Results" onClick={onResset} backgroundColor="red" />
       </div>
     </div>
   );
