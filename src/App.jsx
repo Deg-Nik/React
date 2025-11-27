@@ -8,6 +8,8 @@ import Lesson_04 from "./lessons/lesson_04/lesson/Lesson_04";
 import Homework_04 from "./homeworks/homework_04/Homework_04";
 import Hw_04 from "./lessons/lesson_05/hw_04/Hw_04";
 import Lesson_05 from "./lessons/lesson_05/lesson/Lesson_05";
+import Homework_05 from "./homeworks/homework_05/Homework_05";
+import Consultation_03 from "./consultation/consultation_03/Consultation_03"
 
 
 function App() {
@@ -22,7 +24,9 @@ function App() {
       {/* <Lesson_04/> */}
       {/* <Homework_04/> */}
       {/* <Hw_04/> */}
-      <Lesson_05/>
+      {/* <Lesson_05/> */}
+      <Homework_05/>
+      {/* <Consultation_03/> */}
     </>
   );
 }
